@@ -1,0 +1,7 @@
+Step1 
+    Create Server -> server.js
+
+Step2
+    Connecting to the database
+    user-> gaurangrastogi password->Gaurang
+    url->mongodb+srv://gaurangrastogi:<password>@cluster0.04dt9.mongodb.net/?retryWrites=true&w=majority
