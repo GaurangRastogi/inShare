@@ -5,3 +5,12 @@ Step2
     Connecting to the database
     user-> gaurangrastogi password->Gaurang
     url->mongodb+srv://gaurangrastogi:<password>@cluster0.04dt9.mongodb.net/?retryWrites=true&w=majority
+Step3
+    Deployment in Heroku
+Step4
+    Cors setup -> since we've two different domains
+        a) inShare ApI that we created
+        b) Frontend We'll soon make
+        To communicate with each other we need to do cors setup, otherwise for 
+        security reasons it'll be blocked
+        c) We can handle cors(both side) in server side 

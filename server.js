@@ -1,6 +1,7 @@
 const express=require('express');
 const app=express();
 const path=require('path');
+const cors=require('cors');
 const PORT=process.env.PORT||3000;  //If process env has any port given to  it in .env, otherwise give port 3000
 //to use static files
 app.use(express.static('public'));
@@ -9,6 +10,12 @@ app.use(express.json());
 const connnectDB=require('./config/db');
 connnectDB();
 
+
+//Cors
+const corsOptions={
+    origin:process.env.ALLOWED_CLIENTS.split(','),  
+}
+app.use(cors(corsOptions));
 
 //template Engine ->default location of views
 app.set('views',path.join(__dirname,'/views'));
