@@ -14,3 +14,6 @@ Step4
         To communicate with each other we need to do cors setup, otherwise for 
         security reasons it'll be blocked
         c) We can handle cors(both side) in server side 
+Step5 
+    heroku has schedular
+    it'll run script file to run schedular and delete files in 24 hours
