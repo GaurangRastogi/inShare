@@ -24,3 +24,8 @@ async function fetchData(){
 }
 
 fetchData().then(process.exit);
+
+/*
+    go to heroku schedular
+    create job -> run 'node script.js' every day at 2 AM
+*/
