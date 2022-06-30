@@ -43,10 +43,9 @@ router.post('/',(req,res)=>{
 router.post('/send',async (req,res)=>{
     //getting parameters we sent
     const {uuid,emailTo,emailFrom}=req.body;
-    res.send(req.body);
     //Validate Request
     if(!uuid||!emailTo||!emailFrom)
-        return res.status(422).send({error:'All fields required'});
+        return res.status(422).send(`${{ error: 'All fields required' }}\n${req.body}`);
     
     //Get data from database
     const file=await  File.findOne({uuid:uuid});
