@@ -13,7 +13,8 @@ connnectDB();
 
 //Cors
 const corsOptions={
-    origin: process.env.ALLOWED_CLIENTS.split(','),  
+    //origin: process.env.ALLOWED_CLIENTS.split(','),  
+    origin:'http://localhost:3000',
 }
 app.use(cors(corsOptions));
 
